@@ -269,23 +269,27 @@
         "keyContributions": [
             {
                 "heading" : "Fetching API Details ",
-                "description" : "Fetched product details from the API to display them on the application."
+                "description" : "Integrated APIs to fetch and display movie data,including images, trailers, and details."
             },
             {
                 "heading" : "Home Page Design",
-                "description" : "Designed the home page with login and logout functionality to avoid unnecessary navigation. Products are displayed upon login, and users are navigated to a separate page upon logout."
+                "description" : "Created a home page with a carousel featuring movie  cards and sections like Top Movies and TV Shows."
             },
             {
-                "heading" : "Product Navigation",
-                "description" : "Used React Router for seamless navigation. Each product's information is displayed with the ability to change images by clicking on thumbnail images."
+                "heading" : "Movie Slider",
+                "description" : "Designed a dedicated slider on the movies page to showcase movies with smooth navigation."
             },
             {
-                "heading" : "Product Information Display" ,
-                "description" : " Displayed comprehensive information for each product, including large images that change based on user interaction with smaller thumbnail images."
+                "heading" : "Search Functionality" ,
+                "description" : "Implemented a search feature to allow users to find movies easily."
             },
             {
-                "heading" : "Filtering Options",
-                "description" : "Added filtering options to sort products based on various criteria such as price (low to high, high to low) and categories (e.g., smartphones, groceries). Provided brand details and categorized products for easy browsing."
+                "heading" : "Movie Details Page ",
+                "description" : "Developed a detailed view for each movie,including trailer playback and in-depth information."
+            },
+            {
+                "heading" : "Category Sections  ",
+                "description" : "Added categories for Popular Movies, TV Shows, and Upcoming Movies,each with similar functionalities and filtering options. "
             }
         ],
         "TechnologiesUtilized":[
@@ -299,11 +303,11 @@
             },
             {
                 "heading" : "React JS",
-                "description" : " Implemented various functionalities using React, including fetching and displaying product details from APIs. Designed a home page with login and logout functionality to manage user navigation. Leveraged React Router for seamless product navigation, enabling users to view detailed information and image galleries for each product. Added filtering options to sort products based on price, rating, and categories, providing a dynamic and interactive user experience."
+                "description" : "Implemented various functionalities using React,including fetching and displaying movie details from APIs.Designed a home page with sections for Top Movies and TV Shows, incorporating a carousel for featured content. Utilized React Router for seamless navigation, allowing users to view detailed information and trailers for each movie. Added search functionality and category filters for Popular Movies, TV Shows, and Upcoming Movies, enhancing the interactive and user-friendly experience."
             },
             {
                 "heading" : "Results",
-                "description": "Developed an e-commerce application that successfully incorporates key features of a modern shopping platform. The implementation of product details, price and category-based filtering, and seamless navigation provided a comprehensive and user-friendly experience. The application allows users to view detailed product information and image galleries, enhancing their shopping experience. The visually appealing design, intuitive navigation, and optimized performance contributed to an improved user experience, driving increased engagement and usability of the app."
+                "description": "Developed a movie search engine that effectively integrates core features of a modern entertainment platform.Implemented functionalities for detailed movie information, trailer playback, and category-based filtering, providing a rich and user-friendly experience. The application includes a dynamic home page with carousels, search functionality, and well-organized categories such as Popular Movies, TV Shows, and Upcoming Movies. The visually engaging design, intuitive navigation, and optimized performance significantly enhanced user interaction and satisfaction, leading to increased engagement and overall usability."
             }
         ],
         "images": [
@@ -311,7 +315,7 @@
             "movie2.png",
             "movie3.png"
         ],
-        "projectURL": "https://jsonbazaar.netlify.app/"
+        "projectURL": "https://movieflxbinge.netlify.app/"
     },
     {
         "id": 7,

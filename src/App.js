@@ -11,6 +11,7 @@ import Services from './components/services';
 import Contact from './components/contact';
 import ProjectDetails from "./components/projectdetails";
 import Footer from "./components/footer";
+import ScrollToTop from "./components/scrolltop";
 
 const Layout = ({ children }) => {
     // const location = useLocation();
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
         <>
             {<Navbar />}
             {children}
+            <ScrollToTop/>
         </>
     );
 };
