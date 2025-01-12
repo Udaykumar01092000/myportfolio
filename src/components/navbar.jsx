@@ -24,7 +24,7 @@ function Navbar() {
           <Link to = "https://www.linkedin.com/in/uday-kumar-0290711aa/" target="_blank" className ="linkedin"><i class="bi bi-linkedin"></i></Link>
           <Link to = "https://www.facebook.com/murarishettyudaykumar/" target="_blank" className ="facebook"><i class="bi bi-facebook"></i></Link>
           <Link to = "https://www.instagram.com/uday_kumar2345/" target="_blank" className ="linkedin"><i class="bi bi-instagram"></i></Link>
-          <Link to = "#" target="_blank" className ="skype"><i class="bi bi-skype"></i></Link>
+          <Link to = "#" target="_blank" className ="skype"><i className = "bi bi-skype"></i></Link>
         </div>
         <nav id="navmenu" className="navmenu">
           <ul>

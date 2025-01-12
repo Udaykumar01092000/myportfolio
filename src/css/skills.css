@@ -1,19 +1,17 @@
+/* Skills Section */
 .skills-section {
-  margin-left: 300px; /* Space reserved for the navbar */
-  padding: 20px; /* Optional: Add padding for content */
-  transition: margin-left 0.3s ease-in-out; /* Smooth adjustment for mobile view */
+  margin-left: 300px !important ; /* Space reserved for the navbar */
+  padding: 20px;
   background-color: color-mix(in srgb, #149ddd, transparent 95%);
 }
-.skillshead{
+.skills-head {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
   position: relative;
-  font-family: sans-serif;
   color: #272829;
 }
-.skillshead::after{
+
+.skills-head::after {
   content: "";
   position: absolute;
   display: block;
@@ -24,53 +22,88 @@
   right: 0;
   top: 45px;
 }
-.skillscontent{
-  color: #272829;
-  overflow: clip;
-  font-weight: 400;
-  font-size: 18px;
-  font-family: sans-serif;
-  animation: fadeInUp 3s ease-out; /* Applies the animation */
-}
-.progress .skill{
-  color: #050d18;
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Raleway", sans-serif;
-}
-.progress .val{
-  float: right !important;
-}
-.progress-bar{
+
+.skills-container {
   display: flex;
-  flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    color: #ffffff;
-    text-align: center;
-    white-space: nowrap;
-    background-color: #0d6efd;
-    transition: width 0.6s ease;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-@keyframes moveLine {
-  0% {
-      width: 0%;
-  }
-  100% {
-      width: calc(100% * var(--percentage) / 100);
-  }
+
+.skill {
+  width: 45%; /* Half-width for two-column layout */
+  margin-bottom: 20px;
 }
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.skill-bar-wrap {
+  background-color: #e0e0e0;
+  height: 10px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  background-color: var(--bar-color, #4caf50); /* Default bar color */
+  transition: width 0.6s ease-in-out;
+  width: 0%; /* Initial state */
+  animation: fillBar 2s forwards;
+  animation-delay: 0.2s;
+}
+
+.skill-name {
+  color: #333;
+  text-transform: uppercase;
+}
+
+.skill-percentage {
+  color: #333;
+}
+.skill-bar-wrap {
+  height: 7px;
+}
+
+/* Responsive Design */
 @media (max-width: 1199px) {
   .skills-section {
-    margin-left: 0; /* Content takes full width when navbar is toggled in mobile view */
+    margin-left: 0 !important; /* Remove navbar space */
   }
-  .skillshead{
-    font-size: 27px;
+  .skill {
+    width: 100%; /* Full-width on smaller screens */
   }
-  .skillscontent{
-    font-size: 16px;
+  .skills-head{
+    font-size: 26px;
+  }
+  .skills-head::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #149ddd;
+    left: 0;
+    right: 0;
+    top: 32px;
+  }
+  .skill-name , .skill-percentage{
+    font-size: 14px;
+  }
+  
+}
+
+/* Animation for the skill bar fill */
+@keyframes fillBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: calc(var(--percentage) * 1%);
   }
 }

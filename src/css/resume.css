@@ -1,0 +1,72 @@
+.resume-section {
+    margin-left: 300px !important; /* Space reserved for the navbar */
+    padding: 20px !important;
+}
+.resume-head {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #272829;
+}
+  
+.resume-head::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #149ddd;
+  left: 0;
+  right: 0;
+  top: 45px;
+}
+.resumebtn{
+    border: 2px solid #0000ff;
+    background-color: #0000ff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.resumebtn:hover {
+    background-color: #ffffff;
+    color: #0000ff !important;
+    border-color: #0000ff;
+    text-decoration: underline;
+}
+.resumebtn i.fas.fa-download{
+    padding-right: 10px;
+}
+.resumebtn:hover i.fas.fa-download{
+    background-color: #ffffff;
+    color: #0000ff !important;
+    border-color: #0000ff;
+    padding-right: 10px;
+}
+a.resume::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 1.3s ease;
+}
+
+a.resume:hover::after {
+    width: 95%;
+    color: #007bff;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+}
+@media (max-width: 1199px) {
+    .resume-section {
+      margin-left: 0 !important; /* Remove navbar space */
+    }
+}

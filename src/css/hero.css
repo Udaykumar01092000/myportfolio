@@ -14,12 +14,12 @@
     object-fit: cover;
   }
   .description{
-    font-size: 26px;
+    font-size: 24px !important;
     font-weight: 600;
   }
   .container {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0%;
     transform: translate(-50%, -50%);
     text-align: left;

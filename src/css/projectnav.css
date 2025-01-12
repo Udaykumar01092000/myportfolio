@@ -1,0 +1,49 @@
+.project-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background : color-mix(in srgb, #272829 , transparent 96%);
+    color: white;
+    padding: 10px 20px;
+    transition: margin-left 0.3s ease-in-out; /* Smooth adjustment for mobile view */
+}
+ .project-navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #050d18;
+    font-family: "Raleway",  sans-serif !important;
+}
+
+.project-navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 6px;
+    color: #272829;
+}
+.projectname::before{
+    content: "/";
+    display: inline-block;
+    padding-right: 10px;
+    color: color-mix(in srgb, #272829 , transparent 70%);
+}
+.project-navbar .nav-links li a {
+    text-decoration: none !important;
+    color: #149ddd;
+    font-size: 1rem;
+}
+
+.project-navbar .nav-links li a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 1199px) {
+    .project-navbar {
+      margin-left: 0; /* Content takes full width when navbar is toggled in mobile view */
+    }
+    .project-navbar .logo{
+        font-size: 17px;
+    }
+    .project-navbar .nav-links li a {
+        font-size: 1rem;
+    }
+    
+}

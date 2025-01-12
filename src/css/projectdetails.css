@@ -1,0 +1,99 @@
+.project-section{
+  margin-left: 310px; /* Space reserved for the navbar */
+  transition: margin-left 0.3s ease-in-out; /* Smooth adjustment for mobile view */
+}
+.portfolio-info{
+  box-shadow : 0px 0 30px color-mix(in srgb, #272829, transparent 90%);
+  padding: 30px;
+}
+.portfolio-info h3{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid color-mix(in srgb, #272829 , transparent 85%);
+}
+.portfolio-info ul{
+  list-style-type: none;
+  padding: 6px 0;
+  font-size: 16px;
+}
+.portfolio-info ul li{
+  list-style-type: none;
+  padding: 6px 0;
+}
+.portfolio-description{
+  font-size: 18px;
+  color: color-mix(in srgb, #272829 , transparent 30%);
+  text-align: justify;
+  padding: 0px 5px;
+}
+.descriptionhead{
+  color: #050d18;
+}
+.projectlink a{
+  text-decoration: none;
+  color: #149ddd;
+  font-size: 16px;
+  padding: 0px 3px;
+  overflow: auto;
+}
+.contributionshead{
+  color: #050d18;
+  font-family: "Raleway",  sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.project-contributions ul{
+  list-style-type: none;
+  font-size: 17px;
+}
+/* Change color of previous arrow */
+.carousel-control-prev-icon {
+  background-color: #149ddd; /* Set the desired color */
+  border-radius: 50%;
+  padding: 15px 0px;
+}
+
+/* Change color of next arrow */
+.carousel-control-next-icon {
+  background-color: #149ddd; /* Set the desired color */
+  border-radius: 50%;
+  padding: 5px 0px;
+}
+
+/* Optionally, change the hover effect color */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  color: rgba(0, 0, 0, 0.5); /* Semi-transparent on hover */
+}
+
+@media (max-width : 1199px) {
+    .project-section {
+      margin-left: 0; /* Content takes full width when navbar is toggled in mobile view */
+    }
+    .projectlink a{
+      font-size: 14px;
+    }
+    .portfolio-description{
+      font-size: 12px !important;
+      padding: 0px 20px;
+    } 
+    .project-contributions h2{
+      padding: 0px 20px;
+    }
+    .project-contributions{
+      font-size: 14px !important;
+      padding: 0;
+    }
+    .project-contributions ul{
+      list-style-type: none;
+      font-size: 15px;
+    }
+    
+}
+@media (max-width : 320px) {
+  .projectlink a{
+    font-size: 12px;
+  }
+}

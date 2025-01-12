@@ -28,10 +28,10 @@ function Hero() {
 
   return (
     <>
-      <section id="hero" class="hero section">
-      <img src = {slider} alt="" data-aos="fade-in" class="" />
+      <section id="hero" className="hero section">
+      <img src = {slider} alt="" data-aos="fade-in"/>
       <div
-        className="container"
+        className = "container"
         style={{
           paddingLeft: '50px',
           background : 'linear-gradient(45deg, rgb(255, 255, 255), rgb(194 98 34), gainsboro)',
@@ -41,8 +41,8 @@ function Hero() {
         data-aos="fade-up"
         data-aos-delay="50"
       >
-        <h2 class = "myname">Uday Kumar</h2>
-        <p class = "description">I'm a <span class="typed" data-typed-items="Web Developer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2 className = "myname">Uday Kumar</h2>
+        <p className = "description">I'm a <span className="typed" data-typed-items="Web Developer"></span><span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>  
       </section>
     </>

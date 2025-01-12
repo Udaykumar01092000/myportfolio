@@ -90,6 +90,6 @@ img.myprofile{
 @media (max-width : 768px) {
   img.myprofile{
     display: block;
-    margin: 0px auto;
+    margin: 0px auto !important;
   }
 }

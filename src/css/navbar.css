@@ -88,7 +88,7 @@ body {
   justify-content: center;
   margin: 0 5px;
   border-radius: 50%;
-  transition: background 0.3s, color 0.3s;
+  transition: 0.3s, color 0.3s;
 }
 
 .header .social-links a:hover {
@@ -111,7 +111,7 @@ body {
   padding: 10px 15px;
   display: block;
   font-size: 19px;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: "Poppins", sans-serif ; /*var(--nav-font)*/
   transition: color 0.3s;
 }
@@ -152,7 +152,6 @@ body {
 
 .header .social-links a {
   color: #ffffff !important;
-  /* background-color: #149ddd; */
   background: color-mix(in srgb, #ffffff, transparent 90%);
 }
 i{
