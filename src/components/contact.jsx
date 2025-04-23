@@ -58,7 +58,8 @@ function Contact() {
           </div>
           <div className  = "col-lg-7"> 
             <div className  = "info-wrap">
-              <form id="contact-form" onsubmit="sendEmail(event)" className ="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+              <form action = "https://formspree.io/f/mnqwlxyz" method = "POST" id="contact-form" onsubmit="sendEmail(event)" 
+                className ="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                   <div className ="row gy-4">
                       <div className ="col-md-6">
                           <label for="name-field" className ="pb-2">Your Name</label>
